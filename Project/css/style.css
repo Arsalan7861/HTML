@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    background-color: rgb(49, 83, 83);
     min-height: 100vh;
     max-width: 800px;
     margin: 0 auto;
@@ -16,4 +17,12 @@ th, td, caption {
     font-family: 'Courier New', Courier, monospace;
     border-collapse: separate;
     padding: 0.5rem;
+}
+
+a:hover,
+a:active {
+    color:blue;
+}
+h1 {
+    color: rgb(17, 196, 26);
 }
