@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Arsalan Khroush">
+    <meta
+      name="Description"
+      content="This code icludes all the things that I learn in HTML.">
+    <title>My first Web page.</title>
+    <link rel="icon" href="html5.png" type="image/x.icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+  </head>
+
+  <body>
+    <header>
+    <h1>Hello World!</h1>
+    <nav>
+      <ul>
+        <li>
+        <a href="#Timetable">My timetable</a>
+        </li>
+        <li>
+        <a href="#contact">Contact me</a>
+        </li>
+      </ul>
+    </nav>
+    </header>
+    <hr>
+    <main>
+      <section>
+        <h2>Welcome!</h2>
+        <video width="300" height="200" controls>
+          <source src="Video/mov_bbb.mp4" type="Video/mp4">
+          <source src="Video/mov_bbb.ogg" type="Video/ogg">
+          Your browser does not support the video tag.  
+        </video>
+        <p>This is my first Web Page.</p>
+        <img src="img/html-logo.jpg" alt="Html logo" title="I am learning HTML5" width="150" height="150">
+        <figure>
+          <figcaption>
+            This is an example of <strong>HTML</strong> code:
+          </figcaption>
+        <p>
+          <code>&lt;h1&gt;Hello User&lt;/h1&gt;</code>
+        </p>
+        </figure>
+        <aside>
+          <details>
+            <summary>
+              Guess how many <mark>hours</mark> a day I code.
+            </summary>
+            <p>
+              I start <time datetime="08:00">8 am</time> and I code for <time datetime="PT3H">3 hours</time> everyday.
+            </p>
+          </details>
+        </aside>
+      </section>
+      <article id="Timetable">
+      <h3>This is my <em>timtable</em>:</h3>
+      <p>Days:</p>
+      <ol>
+        <li>First day ...</li>
+        <li>Second day....</li>
+      </ol>
+      <table>
+        <caption>My daily schedual</caption>
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th scope="col">Time</th>
+            <th scope="col">Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Morning</th>
+            <td>
+              <time datetime="08:00">8am</time>-<time datetime="12:00">12pm</time>
+            </td>
+            <td>Code</td>
+          </tr>    
+          <tr>
+            <th scope="row">Noon</th>
+            <td>
+              <time datetime="12:00">12pm</time>-<time datetime="13:30">01:30pm</time>
+            </td>
+            <td>Lunch and Prayer</td>
+          </tr>    
+          <tr>
+            <th scope="row">Afternoon</th>
+            <td>
+              <time datetime="13:30">01:30pm</time>-<time datetime="18:00">6pm</time>
+            </td>
+            <td>Study other lessons</td>
+          </tr>
+          <tr>
+            <th scope="row">Evening</th>
+            <td rowspan="2">Other times</td>
+            <td>Exersice</td>
+          </tr>
+          <tr>
+            <th scope="row">Night</th>
+            <td>Sleep</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">This is what I do everyday.</td>
+          </tr>
+        </tfoot>  
+      </table>
+      </article>
+
+      <hr>
+
+      <!--This is a comment.-->
+      <article>
+        <h2>The <strong>programming languages that I want to learn</strong></h2>
+        <figure>
+          <img src="img/programming.jpg" alt="Code" width="300"   height="200" title="Programming" loading="lazy">
+          <figcaption>Picture</figcaption>
+        </figure>
+        <p>
+          Languages: 
+          <br>&nbsp;&nbsp;&nbsp;1) HTML 
+          <br>&nbsp;&nbsp;&nbsp;2) CSS
+          <br>&nbsp;&nbsp;&nbsp;3) Javascript 
+          <br>&nbsp;&nbsp;&nbsp;4) c#
+          <br>&nbsp;&nbsp;&nbsp;5) Java
+        </p>
+      </article>
+      <hr>
+
+      <article>
+        <h2>Subjects that I like:</h2>
+        <figure>
+          <img src="img/Subjects.jpg" alt="img" width="220" height="280" loading="lazy">
+        </figure>
+        <dl>
+          <dt>Math:</dt>
+          <dd>I Like working with numbers.</dd>
+          <dt>Computer:</dt>
+          <dd>Working with technology is goood.</dd>
+        </dl>
+      </article>
+
+      <hr>
+
+      <article id="contact">
+        <h2>Contact me</h2>
+        <p>I'd really like to hear from you!</p>
+
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Personal Info</legend>
+          <p>
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Name" autocomplete="on" required autofocus>
+          </p>
+          <p>
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" placeholder="L/Name" autocomplete="on" required>
+          </p>
+          <p>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Your secret" required>
+          </p>
+          <p>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+          </p>
+          <p>
+            <label for="decade">Favorite Decade:</label>
+            <input type="number" name="decade" id="decade" min="1940" max="2020" step="10" value="1980" required>
+          </p>
+          <p>
+            <label for="coffee">Favorite Coffee:</label>
+            <select name="coffee" id="coffee" multiple size="5">
+              <optgroup label="Coffees">
+                <option value="regular coffee">Regular Coffee</option>
+                <option value="iced coffee">Iced Coffee</option>
+              </optgroup>
+              <optgroup label="Espresso Drinks">
+                <option value="latte" selected>Latte</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="cortado">Cortado</option>
+                <option value="americano">Americano</option>
+              </optgroup>
+              <option value="other">Other</option>
+            </select>
+          </p>
+          <!-- <p>
+            <label for="coffee">Favorite Coffee:</label>
+            <input type="text" name="coffee" id="coffee" list="coffee-list">
+            <datalist id="coffee-list">
+              <option value="coffee">
+              <option value="latte">
+              <option value="espresso">
+              <option value="cortado">
+              <option value="americano">
+              <option value="other">
+            </datalist>
+          </p> -->
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>What is your favorite food.</legend>
+            <p>
+              <input type="radio" name="food" id="tacos" value="tacos">
+              <label for="tacos">Tacos</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="pizza" value="pizza">
+              <label for="pizza">Pizza</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="other" value="other">
+              <label for="other">Other</label>
+            </p>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Do you have pets?</legend>
+            <p>
+              <input type="checkbox" name="pets" id="dog" value="dog">
+              <label for="dog">Dog</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="cat" value="cat">
+              <label for="cat">Cat</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="fish" value="fish">
+              <label for="fish">Fish</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="otherpet" value="otherpet">
+              <label for="otherpet">Other</label>
+            </p>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Sent Me A Note</legend>
+            <label for="massage">Your Massage:</label>
+            <br>
+            <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Type Your Massage Here"></textarea>
+          </fieldset>
+          <br>
+          <button type="submit">Submit</button>
+          <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+          <button type="reset">Reset</button>
+        </form>
+      </article>
+    </main>
+    <hr>
+    <footer>
+      <p>
+        &star;&lt;&lt;&lt; &copy;<a href="about.html">Arsalan Khroush</a> &gt;&gt;&gt;&star;
+      </p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+  </body>
+</html>
